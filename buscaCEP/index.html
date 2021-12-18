@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Busca CEP</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Busca CEP</h1>
+        <div class="input">
+            <label for="buscador">Buscador</label>
+            <input id="buscador" type="text" placeholder="00000-000">
+            <p id="erro1">Endereço não encontrado ou não existe</p>
+            <p id="erro2">CEP inválido</p>
+            <button>Buscar</button>
+        </div>
+    </div>
+
+    <section>
+        <label for="logradouro">Logradouro</label>
+        <input id="logradouro" type="text" value="" readonly>
+        <label for="complemento">Complemento</label>
+        <input id="complemento" type="text" value="" readonly>
+        <label for="bairro">Bairro</label>
+        <input id="bairro" type="text" value="" readonly>
+        <label for="localidade">Localidade</label>
+        <input id="localidade" type="text" value="" readonly>
+        <label for="uf">UF</label>
+        <input id="uf" type="text" value="" readonly>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+    
+</body>
+</html>

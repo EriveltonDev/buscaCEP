@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+div {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+label {
+    cursor: pointer;
+}
+
+div input {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    color: black;border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section input {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+#erro1, #erro2 {
+    display: none;
+}
+
+#buscador {
+    border: none;
+}
+
+#buscador.ativo {
+    border: 2px solid red;
+}
+
+#erro1.ativo {
+    color: red;
+    padding: 10px;
+    display: block;
+}
+
+#erro2.ativo {
+    color: red;
+    padding: 10px;
+    display: block;
+}
+
+@media (max-width: 400px ) {
+    body {
+        max-width: 100vh;
+        max-height: 70vh;
+    }
+}
